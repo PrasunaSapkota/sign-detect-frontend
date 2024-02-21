@@ -42,10 +42,12 @@
 } */
 
 .image-container {
-  height: 100px;
-  width: 100px;
+  height: 200px;
+  width: 200px;
   border: #000;
   border-style: dashed;
+  background-color: #a3b596;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .button {
@@ -67,10 +69,40 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   align-items: center;
+  justify-content: center;
+  height: calc(100vh - 70px); /* Adjusted height calculation */
 }
 
 .error-message {
   color: red;
+  height: 20px;
+}
+
+.upload-button {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: darkgreen;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  height: 70px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.main-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create a 3-column grid */
 }
