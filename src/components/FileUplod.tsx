@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-function FileUpload() {
+export function FileUpload() {
   const [url, setUrl] = useState<string>("");
   const [file, setFile] = useState<File | null>(null);
   const [isError, setIsError] = useState<boolean>(false);
@@ -61,4 +61,3 @@ function FileUpload() {
     </div>
   );
 }
-export default FileUpload;

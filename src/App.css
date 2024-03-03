@@ -103,6 +103,66 @@
 }
 
 .main-contents {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Create a 3-column grid */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px); /* Adjusted height calculation */
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_menu {
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.link-element {
+  text-decoration: none;
+  color: #fff;
+}
+.getstarted-button {
+  background-color: #7366c0;
+  color: #d8d8d8;
+  padding: 10px 20px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.cnn_section {
+  height: calc(100vh - 70px);
+}
+.cnn_content {
+  box-sizing: border-box;
+  max-width: 60%;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.cnn_content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.yolo_content {
+  box-sizing: border-box;
+  max-width: 60%;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.yolo_content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.comparison_content {
+  box-sizing: border-box;
+  max-width: 60%;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.comparison_content h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
