@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { VideoPlayer } from "./VideoPlayer";
 
 export function FileUpload() {
   const [url, setUrl] = useState<string>("");
@@ -33,10 +34,11 @@ export function FileUpload() {
 
   return (
     <div className="file-upload-section">
-      <div className="container">
+      <VideoPlayer url={url} />
+      <div className="upload_container">
         <div className="image-container">
           <label htmlFor="file-input" className="button">
-            +
+            + Choose File
           </label>
           <input
             type="file"
@@ -45,7 +47,6 @@ export function FileUpload() {
             onChange={handleChange}
           />
         </div>
-        {!!url && <img src={url} alt="Preview" className="image-preview" />}
         <button
           onClick={handleClick}
           disabled={isLoading}

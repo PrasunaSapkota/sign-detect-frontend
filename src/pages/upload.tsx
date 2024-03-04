@@ -1,6 +1,10 @@
 import { FileUpload } from "../components";
 
 function Upload() {
-  return <FileUpload />;
+  return (
+    <>
+      <FileUpload />;
+    </>
+  );
 }
 export default Upload;
